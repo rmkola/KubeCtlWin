@@ -50,13 +50,8 @@ namespace KubeCtlWin
                     extraArguments = menuItem.Text.Replace("%1", cm.SourceControl.Text);
                 }
                 string arguments = $"{command} --kubeconfig={Properties.Settings.Default.ConfigFile} {extraArguments}";
-                string FullArguments = "";
-
-
-                FullArguments += $"{arguments};";
-
-            
-                psi.Arguments = FullArguments;
+                
+                psi.Arguments = arguments;
                 Process.Start(psi);
 
 
