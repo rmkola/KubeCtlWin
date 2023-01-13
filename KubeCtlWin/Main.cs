@@ -53,15 +53,10 @@ namespace KubeCtlWin
                 string FullArguments = "";
 
 
-
-
                 FullArguments += $"{arguments};";
 
-                //if (p != null && !p.HasExited)
-                //    p.WaitForExit();
-
-
-                psi.Arguments = FullArguments.Substring(0, FullArguments.Length - 1);
+            
+                psi.Arguments = FullArguments;
                 Process.Start(psi);
 
 
