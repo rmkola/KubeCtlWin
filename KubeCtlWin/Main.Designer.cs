@@ -83,6 +83,8 @@
             // 
             this.flVM.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.flVM.AutoScroll = true;
+            this.flVM.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flVM.Location = new System.Drawing.Point(14, 31);
             this.flVM.Name = "flVM";
             this.flVM.Size = new System.Drawing.Size(548, 717);
