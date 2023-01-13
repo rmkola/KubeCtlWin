@@ -176,11 +176,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.LightCoral;
-            this.label3.Location = new System.Drawing.Point(39, 207);
+            this.label3.Location = new System.Drawing.Point(5, 165);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 40);
+            this.label3.Size = new System.Drawing.Size(157, 100);
             this.label3.TabIndex = 9;
-            this.label3.Text = "You can use %1 \r\nfor parameters";
+            this.label3.Text = "You can use %1 \r\nfor pods.\r\n\r\nYou can use %2\r\nfor extra parameters";
             // 
             // Settings
             // 
