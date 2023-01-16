@@ -42,11 +42,11 @@ namespace KubeCtlWin
 
                 string command = Properties.Settings.Default.Prefix;
                 var extraArguments = menuItem.Text;
-                string arguments = $"{command} --kubeconfig={Properties.Settings.Default.ConfigFile} {extraArguments}";
                 if (menuItem.Text.Contains("%1"))
                 {
 
                     extraArguments = menuItem.Text.Replace("%1", cm.SourceControl.Text);
+                    string arguments = $"{command} --kubeconfig={Properties.Settings.Default.ConfigFile} {extraArguments}";
 
                     psi.Arguments = arguments;
                     Process.Start(psi);
@@ -60,7 +60,7 @@ namespace KubeCtlWin
 
                         extraArguments = menuItem.Text.Replace("%2", f.txtExtraArgs.Text);
                         GetPods(extraArguments);
-                        
+
                     }
                     else return;
                 }
